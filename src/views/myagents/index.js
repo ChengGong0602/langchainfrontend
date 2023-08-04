@@ -189,13 +189,13 @@ const Chatflows = () => {
                 </Box>
             </Modal>
             <Grid container spacing={gridSpacing}>
-                {!isLoading &&
+                {/* {!isLoading &&
                     getAllChatflowsApi.data &&
                     getAllChatflowsApi.data.map((data, index) => (
                         <Grid key={index} item lg={3} md={4} sm={6} xs={12}>
                             <ItemCard onClick={() => goToCanvas(data)} data={data} images={images[data.id]} />
                         </Grid>
-                    ))}
+                    ))} */}
             </Grid>
             {!isLoading && (!getAllChatflowsApi.data || getAllChatflowsApi.data.length === 0) && (
                 <Stack sx={{ alignItems: 'center', justifyContent: 'center' }} flexDirection='column'>
